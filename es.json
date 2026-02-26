@@ -1,15 +1,51 @@
 {
     "header": {
-        "badgeText": "Diseño · Desarrollo · soluciones a medida",
-        "subtitle": "Desarrollamos Ideas, creamos soluciones desde 2023",
-        "title": "Proyectos que Transforman",
-        "buton1": "Nosotros",
-        "buton2": "Proyectos"
+        "badgeText": "Diseño · Desarrollo · Soluciones a medida",
+        "subtitle": "Creemos que cada cliente es único. Escuchamos, analizamos y construimos soluciones digitales personalizadas que se adaptan perfectamente a sus necesidades y objetivos específicos.",
+        "title": "Soluciones a Medida para su Negocio",
+        "buton2": "Ver Proyectos"
     },
     "section":{
-        "title": "Proyectos",
-        "about": "Nosotros"
-
+        "title": "Proyectos Destacados",
+        "about": "Quiénes Somos",
+        "aboutSubtitle": "Aliados en tu camino digital. No solo escribimos código; construimos herramientas que potencian el crecimiento de tu negocio.",
+        "technologies": "Nuestras Tecnologías",
+        "contact": "Inicia un Proyecto"
+    },
+    "services": {
+        "title1": "Desarrollo Web",
+        "desc1": "Soluciones personalizadas y escalables adaptadas a tus procesos de negocio.",
+        "title2": "Diseño de interfaces",
+        "desc2": "Interfaces intuitivas diseñadas para maximizar el engagement y la conversión.",
+        "title3": "Mantenimiento & Soporte",
+        "desc3": "Mantén tu software siempre actualizado y protegido contra amenazas digitales."
+    },
+    "approach": {
+        "badgeText": "Creando soluciones desde",
+        "subtitle": "Nuestro Enfoque",
+        "titlePart1": "Entregamos soluciones",
+        "titlePart2": "de Software de Calidad",
+        "mainDesc": "Transformamos la complejidad técnica en una ventaja competitiva para tu negocio, enfocándonos en resultados tangibles y experiencias memorables.",
+        "point1Title": "Precios Competitivos",
+        "point1Desc": "Estructuras de costos transparentes que maximizan tu retorno de inversión.",
+        "point2Title": "Servicio de Confianza",
+        "point2Desc": "Soporte continuo y comunicación clara durante todo el ciclo de vida del proyecto."
+    },
+    "technologies": {
+        "frontend": "Desarrollo Frontend",
+        "frontendDesc": "Creamos interfaces intuitivas, rápidas y totalmente responsivas utilizando las últimas tecnologías del mercado.",
+        "backend": "Backend y Herramientas",
+        "backendDesc": "Arquitecturas sólidas y escalables que soportan el crecimiento de tu negocio.",
+        "design": "Diseño y UI/UX",
+        "designDesc": "Diseños centrados en el usuario que convierten visitas en clientes fieles."
+    },
+    "contact": {
+        "title": "Construyamos algo Increíble",
+        "subtitle": "¿Listo para transformar tu idea en una solución personalizada? Déjanos un mensaje.",
+        "name": "Nombre Completo",
+        "email": "Correo Electrónico",
+        "message": "Cuéntanos sobre tus necesidades",
+        "button": "Enviar Mensaje"
     },
     "cards":{
         "subtitle1": "Desarollador Senior",

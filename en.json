@@ -1,14 +1,51 @@
 {
     "header": {
         "badgeText": "Design · Development · Custom solutions",
-        "subtitle": "Developing ideas, creating solutions since 2023",
-        "title": "Projects that Transform",
-        "buton1": "About us",
-        "buton2": "Projects"
+        "subtitle": "We believe every client is unique. We listen, analyze, and build custom digital solutions that perfectly fit your specific business needs and goals.",
+        "title": "Tailor-Made Solutions for Your Business",
+        "buton2": "View Projects"
     },
     "section":{
-        "title": "Projects",
-        "about": "About us"
+        "title": "Featured Projects",
+        "about": "Who We Are",
+        "aboutSubtitle": "Partners in your digital journey. We don't just write code; we build tools that empower your business to grow.",
+        "technologies": "Our Tech Stack",
+        "contact": "Start a Project"
+    },
+    "services": {
+        "title1": "Web Development",
+        "desc1": "Customized and scalable solutions tailored to your business processes.",
+        "title2": "Interface design",
+        "desc2": "Intuitive interfaces designed to maximize user engagement and conversion.",
+        "title3": "Maintenance & Support",
+        "desc3": "Keep your software always up-to-date and protected against digital threats."
+    },
+    "approach": {
+        "badgeText": "Committed to your success",
+        "subtitle": "Our Approach",
+        "titlePart1": "We Deliver Quality",
+        "titlePart2": "Software Solutions",
+        "mainDesc": "We transform technical complexity into a competitive advantage for your business, focusing on tangible results and memorable user experiences.",
+        "point1Title": "Competitive Pricing",
+        "point1Desc": "Transparent cost structures that maximize your return on investment.",
+        "point2Title": "Trusted Service",
+        "point2Desc": "Continuous support and clear communication throughout the project lifecycle."
+    },
+    "technologies": {
+        "frontend": "Frontend Development",
+        "frontendDesc": "We create intuitive, fast, and fully responsive interfaces using the latest market technologies.",
+        "backend": "Backend & Tools",
+        "backendDesc": "Solid and scalable architectures that support your business growth.",
+        "design": "Design & UI/UX",
+        "designDesc": "User-centered designs that turn visitors into loyal customers."
+    },
+    "contact": {
+        "title": "Let's Build Something Great",
+        "subtitle": "Ready to transform your idea into a custom solution? Drop us a message.",
+        "name": "Full Name",
+        "email": "Email Address",
+        "message": "Tell us about your needs",
+        "button": "Send Message"
     },
     "cards":{
         "subtitle1": "Senior Developer",
