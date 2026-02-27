@@ -1,123 +1,133 @@
 {
-    "header": {
-        "badgeText": "Diseño · Desarrollo · Soluciones a medida",
-        "titlePart1": "Creamos el Software que",
-        "titlePart2": "Escala tu Negocio",
-        "subtitle": "Creemos que cada cliente es único. Escuchamos, analizamos y construimos soluciones digitales personalizadas que se adaptan perfectamente a sus necesidades y objetivos específicos.",
-        "buton2": "Ver Proyectos"
+  "header": {
+    "badgeText": "Diseño · Desarrollo · Soluciones a medida",
+    "titlePart1": "Creamos el Software que",
+    "titlePart2": "Escala tu Negocio",
+    "subtitle": "Creemos que cada cliente es único. Escuchamos, analizamos y construimos soluciones digitales personalizadas que se adaptan perfectamente a sus necesidades y objetivos específicos.",
+    "buton2": "Ver Proyectos"
+  },
+  "section": {
+    "title": "Proyectos Destacados",
+    "projectsSubtitle": "Casos de éxito donde la tecnología resolvió desafíos reales.",
+    "about": "Quiénes Somos",
+    "aboutSubtitle": "Somos estrategas digitales apasionados por convertir problemas complejos en experiencias digitales simples y potentes.",
+    "technologies": "Tecnologías que Dominamos",
+    "techSubtitle": "Herramientas de vanguardia para construir soluciones robustas.",
+    "contact": "Inicia un Proyecto"
+  },
+  "techStack": {
+    "cat1": "Frontend & Diseño",
+    "cat2": "Backend & Lógica",
+    "cat3": "Base de Datos & CMS",
+    "cat4": "Herramientas, Despliegue & Datos"
+  },
+  "services": {
+    "title1": "Desarrollo Web",
+    "desc1": "Soluciones personalizadas y escalables adaptadas a tus procesos de negocio.",
+    "title2": "Diseño de interfaces",
+    "desc2": "Interfaces intuitivas diseñadas para maximizar el engagement y la conversión.",
+    "title3": "Mantenimiento & Soporte",
+    "desc3": "Mantén tu software siempre actualizado y protegido contra amenazas digitales."
+  },
+  "approach": {
+    "badgeText": "Creando soluciones desde",
+    "subtitle": "Sobre Nosotros",
+    "titlePart1": "Creamos Soluciones de",
+    "titlePart2": "Software de Alto Impacto",
+    "mainDesc": "Transformamos la complejidad técnica en una ventaja competitiva real. Nuestro enfoque combina ingeniería de precisión con diseño centrado en el usuario para escalar tu visión digital.",
+    "point1Title": "Desarrollo Ágil",
+    "point1Desc": "Entregas incrementales y comunicación constante para garantizar el alineamiento total con tus metas.",
+    "point2Title": "Código de Confianza",
+    "point2Desc": "Arquitecturas seguras y escalables construidas bajo los más altos estándares de calidad internacional."
+  },
+  "contact": {
+    "title": "Hablemos de tu idea",
+    "subtitle": "Cuéntanos sobre tu proyecto y descubramos juntos la mejor solución.",
+    "name": "Nombre",
+    "namePlaceholder": "John Doe",
+    "email": "Email",
+    "emailPlaceholder": "juan@ejemplo.com",
+    "message": "Mensaje",
+    "messagePlaceholder": "¿Qué necesitas construir?",
+    "button": "Enviar Mensaje"
+  },
+  "footer": {
+    "titlePart1": "SOLUCIONES",
+    "titlePart2": "TECNOLÓGICAS",
+    "copyright": "Copyright © 2026. Soluciones tecnológicas."
+  },
+  "cards": {
+    "subtitle1": "Desarrollador Senior",
+    "subtitle2": "Desarrolladora Web"
+  },
+  "projects": {
+    "catarsisLab": {
+      "title": "Catarsis Lab",
+      "description": "Desarrollamos una página web para talleres de crecimiento personal, un espacio dedicado a ofrecer talleres que permiten explorar emociones.",
+      "technologies": ["React", "MUI", "Sanity", "Vercel"],
+      "link": "https://mycatarsis.com/",
+      "imageUrl": "assets/CATARSIS_lab.png",
+      "buttonText": "Ver sitio"
     },
-    "section":{
-        "title": "Proyectos Destacados",
-        "about": "Quiénes Somos",
-        "aboutSubtitle": "Aliados en tu camino digital. No solo escribimos código; construimos herramientas que potencian el crecimiento de tu negocio.",
-        "technologies": "Tecnologías que Dominamos",
-        "contact": "Inicia un Proyecto"
+    "payrollMate": {
+      "title": "Redux Payroll Mate",
+      "description": "Desarrollamos una aplicación que automatiza el cálculo de nóminas y genera comprobantes de pago, optimizando el proceso de gestión salarial para los empleados",
+      "technologies": ["Python", "Openpyxl", "Streamlit"],
+      "link": "https://redux-payroll-mate.streamlit.app/",
+      "imageUrl": "assets/payrollMate.png",
+      "buttonText": "Ver sitio"
     },
-    "techStack": {
-        "cat1": "Frontend & Diseño",
-        "cat2": "Backend & Lógica",
-        "cat3": "Base de Datos & CMS",
-        "cat4": "Herramientas, Despliegue & Datos"
+    "vijalmar": {
+      "title": "Vijalmar",
+      "description": "Se desarrolló una aplicación para automatizar el conteo de horas extras y el cálculo de su valor, incluyendo recargos optimizando el proceso de gestión salarial.",
+      "technologies": ["Python", "Openpyxl", "Streamlit"],
+      "link": "https://audreylopez22.github.io/vijalmar/",
+      "imageUrl": "assets/vijalmar.png",
+      "buttonText": "Ver sitio"
     },
-    "services": {
-        "title1": "Desarrollo Web",
-        "desc1": "Soluciones personalizadas y escalables adaptadas a tus procesos de negocio.",
-        "title2": "Diseño de interfaces",
-        "desc2": "Interfaces intuitivas diseñadas para maximizar el engagement y la conversión.",
-        "title3": "Mantenimiento & Soporte",
-        "desc3": "Mantén tu software siempre actualizado y protegido contra amenazas digitales."
+    "nataliaForero": {
+      "title": "Natalia Forero",
+      "description": "Se desarrolló un sitio web para la marca Natalia Forero, donde se exhiben colecciones de ropa de playa y vestidos de baño, y se gestiona la venta online de estos productos.",
+      "technologies": ["Shopify"],
+      "link": "https://nataliaforero.co/",
+      "imageUrl": "https://nataliaforero.co/cdn/shop/files/IMG_8639.jpg?v=1666731217&width=735",
+      "buttonText": "Ver sitio"
     },
-    "approach": {
-        "badgeText": "Creando soluciones desde",
-        "subtitle": "Nuestro Enfoque",
-        "titlePart1": "Entregamos soluciones",
-        "titlePart2": "de Software de Calidad",
-        "mainDesc": "Transformamos la complejidad técnica en una ventaja competitiva para tu negocio, enfocándonos en resultados tangibles y experiencias memorables.",
-        "point1Title": "Precios Competitivos",
-        "point1Desc": "Estructuras de costos transparentes que maximizan tu retorno de inversión.",
-        "point2Title": "Servicio de Confianza",
-        "point2Desc": "Soporte continuo y comunicación clara durante todo el ciclo de vida del proyecto."
+    "soundBayHouse": {
+      "title": "Sound Bay House",
+      "description": "Desarrollamos una página web en Shopify, integrando la gestión de clientes, reservas y marketing en un solo sitio. Esto optimiza procesos y mejora la experiencia del usuario",
+      "technologies": ["Shopify / Izi Rent"],
+      "link": "https://soundbayhouse.com/",
+      "imageUrl": "assets/SBH.png",
+      "buttonText": "Ver sitio"
     },
-    "contact": {
-        "title": "Construyamos algo Increíble",
-        "subtitle": "¿Listo para transformar tu idea en una solución personalizada? Déjanos un mensaje.",
-        "name": "Nombre Completo",
-        "email": "Correo Electrónico",
-        "message": "Cuéntanos sobre tus necesidades",
-        "button": "Enviar Mensaje"
+    "ConectaUnicamacho": {
+      "title": "Conecta Unicamacho",
+      "description": "Unificamos y centralizamos bases de datos de egresados y empresas en Quinta DB, facilitando el acceso transversal de información institucional.",
+      "technologies": ["Quinta DB", "Bases de Datos"],
+      "link": "https://quintadb.com/apps/bAcSo4W7PcQjKBDvldHmkk/portals/cdxSkMc8nlaRxdVxCJbmk4/login",
+      "imageUrl": "assets/conecta_unicamacho.jpg",
+      "buttonText": "Ver proyecto"
     },
-    "cards":{
-        "subtitle1": "Desarrollador Senior",
-        "subtitle2": "Desarrolladora Web"
-    },
-    "projects": {
-        "catarsisLab": {
-            "title": "Catarsis Lab",
-            "description": "Desarrollamos una página web para talleres de crecimiento personal, un espacio dedicado a ofrecer talleres que permiten explorar emociones.",
-            "technologies": ["React", "MUI", "Sanity", "Vercel"],
-            "link": "https://mycatarsis.com/",
-            "imageUrl": "assets/CATARSIS_lab.png",
-            "buttonText": "Ver sitio"
+    "zaku": {
+      "title": "Zaku",
+      "description": "Para Zaku, transformamos una idea de impacto social en realidad: diseñamos el mockup en Figma, desarrollamos la landing page y construimos el MVP de una app móvil que conecta donantes con organizaciones benéficas, visibilizando el impacto real de cada contribución.",
+      "technologies": ["Figma", "React", "Django"],
+      "imageUrl": "assets/zaku.png",
+      "buttons": [
+        {
+          "text": "Aplicación",
+          "link": "https://app.zakuimpacto.com/"
         },
-        "payrollMate":{
-            "title": "Redux Payroll Mate", 
-            "description": "Desarrollamos una aplicación que automatiza el cálculo de nóminas y genera comprobantes de pago, optimizando el proceso de gestión salarial para los empleados",
-            "technologies": ["Python", "Openpyxl", "Streamlit"],
-            "link": "https://redux-payroll-mate.streamlit.app/",
-            "imageUrl": "assets/payrollMate.png",
-            "buttonText": "Ver sitio"
+        {
+          "text": "Landing Page",
+          "link": "https://www.zakuimpacto.com/"
         },
-        "vijalmar": {
-            "title": "Vijalmar",
-            "description": "Se desarrolló una aplicación para automatizar el conteo de horas extras y el cálculo de su valor, incluyendo recargos optimizando el proceso de gestión salarial.",
-            "technologies": ["Python", "Openpyxl", "Streamlit"],
-            "link": "https://audreylopez22.github.io/vijalmar/",
-            "imageUrl": "assets/vijalmar.png",
-            "buttonText": "Ver sitio"
-        },
-        "nataliaForero":{
-            "title": "Natalia Forero",
-            "description": "Se desarrolló un sitio web para la marca Natalia Forero, donde se exhiben colecciones de ropa de playa y vestidos de baño, y se gestiona la venta online de estos productos.",
-            "technologies": ["Shopify"],
-            "link": "https://nataliaforero.co/",
-            "imageUrl": "https://nataliaforero.co/cdn/shop/files/IMG_8639.jpg?v=1666731217&width=735",
-            "buttonText": "Ver sitio"
-        },
-        "soundBayHouse": {
-            "title": "Sound Bay House",
-            "description": "Desarrollamos una página web en Shopify, integrando la gestión de clientes, reservas y marketing en un solo sitio. Esto optimiza procesos y mejora la experiencia del usuario",
-            "technologies": ["Shopify / Izi Rent"],
-            "link": "https://soundbayhouse.com/",
-            "imageUrl": "assets/SBH.png",
-            "buttonText": "Ver sitio"
-        },
-        "ConectaUnicamacho": {
-            "title": "Conecta Unicamacho",
-            "description": "Unificamos y centralizamos bases de datos de egresados y empresas en Quinta DB, facilitando el acceso transversal de información institucional.",
-            "technologies": ["Quinta DB", "Bases de Datos"],
-            "link": "https://quintadb.com/apps/bAcSo4W7PcQjKBDvldHmkk/portals/cdxSkMc8nlaRxdVxCJbmk4/login",
-            "imageUrl": "assets/conecta_unicamacho.jpg",
-            "buttonText": "Ver proyecto"
-        },
-        "zaku": {
-            "title": "Zaku",
-            "description": "Para Zaku, transformamos una idea de impacto social en realidad: diseñamos el mockup en Figma, desarrollamos la landing page y construimos el MVP de una app móvil que conecta donantes con organizaciones benéficas, visibilizando el impacto real de cada contribución.",
-            "technologies": ["Figma", "React", "Django"],
-            "imageUrl": "assets/zaku.png",
-            "buttons": [
-                {
-                    "text": "Aplicación",
-                    "link": "https://app.zakuimpacto.com/"
-                },
-                {
-                    "text": "Landing Page",
-                    "link": "https://www.zakuimpacto.com/"
-                },
-                {
-                    "text": "Ver Diseño",
-                    "link": "https://www.figma.com/proto/BL5nDcu7AnftLsTeT7StBd/Zaku?node-id=78-536&p=f&t=roGIQHHdiVhamEpS-0&scaling=scale-down&content-scaling=fixed&page-id=11%3A2&starting-point-node-id=78%3A536"
-                }
-            ]
+        {
+          "text": "Ver Diseño",
+          "link": "https://www.figma.com/proto/BL5nDcu7AnftLsTeT7StBd/Zaku?node-id=78-536&p=f&t=roGIQHHdiVhamEpS-0&scaling=scale-down&content-scaling=fixed&page-id=11%3A2&starting-point-node-id=78%3A536"
         }
+      ]
     }
+  }
 }

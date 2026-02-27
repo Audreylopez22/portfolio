@@ -1,358 +1,840 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Soluciones tecnologicas</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/png" href="assets/logo.png" />
-        <!-- Custom Google font-->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Devicons -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light sticky-top py-3">
-                <div class="container px-5">
-                    <a class="navbar-brand fw-bolder d-flex align-items-center" href="index.html">
-                        <img src="assets/logo.png" alt="Logo" height="40" class="me-2">
-                        <div class="d-flex flex-column lh-1">
-                            <span class="text-gradient">SOLUCIONES</span>
-                            <span class="text-gradient small" style="font-size: 0.65rem; letter-spacing: 0.15rem;">TECNOLÓGICAS</span>
-                        </div>
-                    </a>
-                    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bold align-items-center">
-                            <li class="nav-item"><a class="nav-link px-3" href="#projects" data-section="header" data-value="buton2">Proyectos</a></li>
-                            <li class="nav-item"><a class="nav-link px-3" href="#technologies" data-section="section" data-value="technologies">Tecnologías</a></li>
-                            <li class="nav-item"><a class="nav-link px-3" href="#aboutus" data-section="section" data-value="about">Nosotros</a></li>
-                            <li class="nav-item"><a class="nav-link px-3" href="#contact" data-section="section" data-value="contact">Contacto</a></li>
-                            <li class="nav-item ms-lg-3">
-                                <div class="d-flex align-items-center bg-light rounded-pill px-3 py-1 border shadow-sm">
-                                    <span class="small fw-bold text-muted me-2">ES</span>
-                                    <label class="switch-sm">
-                                        <input type="checkbox" id="languageToggle" data-language="es">
-                                        <span class="slider-sm"></span>
-                                    </label>
-                                    <span id="languageText" class="small fw-bold text-gradient ms-2">EN</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-            <!-- Hero Section -->
-            <header class="py-6 overflow-hidden">
-                <div class="container px-5">
-                    <div class="row gx-5 align-items-center justify-content-center text-center">
-                        <div class="col-xxl-10">
-                            <div class="badge bg-royal-slate text-white mb-4 px-3 py-2 rounded-pill shadow-sm">
-                                <div class="text-uppercase small fw-bold letter-spacing-1" data-section="header" data-value="badgeText">
-                                    DISEÑO · DESARROLLO · SOLUCIONES A MEDIDA
-                                </div>
-                            </div>
-                            <h1 class="display-1 fw-extra-bold mb-4">
-                                <span class="text-royal-slate" data-section="header" data-value="titlePart1">Creamos el Software que</span><br>
-                                <span class="text-gradient" data-section="header" data-value="titlePart2">Escala tu Negocio</span>
-                            </h1>
-                            <p class="lead fw-medium text-muted mb-5 px-lg-5 mx-auto max-width-700" data-section="header" data-value="subtitle">
-                                No solo escribimos código; diseñamos soluciones estratégicas pensadas en los objetivos reales de cada cliente.
-                            </p>
-                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                                <a class="btn btn-primary btn-lg" href="#contact" data-section="section" data-value="contact">Inicia un Proyecto</a>
-                                <a class="btn btn-outline-dark btn-lg" href="#projects" data-section="header" data-value="buton2">Ver Proyectos</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
-            <!-- Services Row -->
-            <section class="py-5 bg-soft-gray mt-n5 position-relative z-index-2">
-                <div class="container px-5">
-                    <div class="row gx-4">
-                        <div class="col-md-4 mb-4 mb-md-0">
-                            <div class="service-card-mini shadow-sm">
-                                <div class="service-icon-box shadow-sm"><i class="bi bi-cpu"></i></div>
-                                <h4 class="h5 fw-bold text-royal-slate" data-section="services" data-value="title1">Desarrollo Web</h4>
-                                <p class="small text-muted mb-0" data-section="services" data-value="desc1">Soluciones personalizadas y escalables adaptadas a tus procesos de negocio.</p>
-                                <div class="service-num">01</div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 mb-4 mb-md-0">
-                            <div class="service-card-mini shadow-sm">
-                                <div class="service-icon-box shadow-sm"><i class="bi bi-layers"></i></div>
-                                <h4 class="h5 fw-bold text-royal-slate" data-section="services" data-value="title2">Arquitectura UX/UI</h4>
-                                <p class="small text-muted mb-0" data-section="services" data-value="desc2">Interfaces intuitivas que maximizan la conversión y satisfacción de usuarios.</p>
-                                <div class="service-num">02</div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="service-card-mini shadow-sm">
-                                <div class="service-icon-box shadow-sm"><i class="bi bi-shield-check"></i></div>
-                                <h4 class="h5 fw-bold text-royal-slate" data-section="services" data-value="title3">Mantenimiento & Soporte</h4>
-                                <p class="small text-muted mb-0" data-section="services" data-value="desc3">Tu software siempre al día, optimizado y protegido contra amenazas.</p>
-                                <div class="service-num">03</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Why Choose Us / Approach -->
-            <section class="py-6 bg-white overflow-hidden">
-                <div class="container px-5">
-                    <div class="row gx-5 align-items-center">
-                        <div class="col-lg-6 mb-5 mb-lg-0">
-                            <div class="collage-container">
-                                <div class="dot-pattern"></div>
-                                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80" class="collage-main-img" alt="Software Development">
-                                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80" class="collage-sub-img" alt="Tech Team">
-                                <div class="experience-badge shadow-lg">
-                                    <span class="small-text" data-section="approach" data-value="badgeText">CREANDO SOLUCIONES<br>DESDE ENTONCES</span>
-                                    <span class="small-text">2023</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 ps-lg-5">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="bg-gradient-premium p-1 rounded-circle me-3">
-                                    <div class="bg-white rounded-circle p-1">
-                                        <i class="bi bi-chat-left-dots text-gradient fs-6 d-block"></i>
-                                    </div>
-                                </div>
-                                <span class="small fw-bold text-uppercase text-gradient letter-spacing-1" data-section="approach" data-value="subtitle">Sobre Nosotros</span>
-                            </div>
-                            <h2 class="display-4 fw-extra-bold mb-4">
-                                <span class="text-royal-slate" data-section="approach" data-value="titlePart1">Creamos Soluciones de</span><br>
-                                <span class="text-gradient" data-section="approach" data-value="titlePart2">Software de Alto Impacto</span>
-                            </h2>
-                            <p class="text-muted mb-5 lead fw-medium" data-section="approach" data-value="mainDesc">
-                                Transformamos la complejidad técnica en una ventaja competitiva real. Nuestro enfoque combina ingeniería de precisión con diseño centrado en el usuario para escalar tu visión digital.
-                            </p>
-                            
-                            <div class="info-item-box d-flex align-items-start mb-4">
-                                <div class="feature bg-gradient-premium text-white rounded-circle me-4 shadow-sm"><i class="bi bi-lightning-charge fs-5"></i></div>
-                                <div>
-                                    <h4 class="h5 fw-bold text-royal-slate" data-section="approach" data-value="point1Title">Desarrollo Ágil</h4>
-                                    <p class="small text-muted mb-0" data-section="approach" data-value="point1Desc">Entregas incrementales y comunicación constante para garantizar el alineamiento total con tus metas.</p>
-                                </div>
-                            </div>
-
-                            <div class="info-item-box d-flex align-items-start mb-5">
-                                <div class="feature bg-gradient-premium text-white rounded-circle me-4 shadow-sm"><i class="bi bi-shield-lock fs-5"></i></div>
-                                <div>
-                                    <h4 class="h5 fw-bold text-royal-slate" data-section="approach" data-value="point2Title">Código de Confianza</h4>
-                                    <p class="small text-muted mb-0" data-section="approach" data-value="point2Desc">Arquitecturas seguras y escalables construidas bajo los más altos estándares de calidad internacional.</p>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Technologies Section -->
-            <section id="technologies" class="py-6 bg-white">
-                <div class="container px-5">
-                    <div class="text-center mb-5">
-                        <h2 class="display-4 fw-extra-bold mb-3"><span class="text-gradient" data-section="section" data-value="technologies">Tecnologías que Dominamos</span></h2>
-                        <p class="lead text-muted">Herramientas de vanguardia para construir soluciones robustas.</p>
-                    </div>
-                    
-                    <div class="tech-panel bg-dark-deep rounded-5 border-curly mt-5">
-                        <div class="row g-5">
-                            <!-- Columna 1: Frontend & Diseño -->
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <span class="tech-category-title" data-section="techStack" data-value="cat1">Frontend & Diseño</span>
-                                <ul class="tech-list">
-                                    <li class="tech-item"><i class="devicon-javascript-plain tech-icon-bi"></i> JavaScript</li>
-                                    <li class="tech-item"><i class="devicon-react-original tech-icon-bi"></i> React</li>
-                                    <li class="tech-item"><i class="devicon-html5-plain tech-icon-bi"></i> HTML</li>
-                                    <li class="tech-item"><i class="devicon-css3-plain tech-icon-bi"></i> CSS</li>
-                                    <li class="tech-item"><i class="devicon-bootstrap-plain tech-icon-bi"></i> Bootstrap</li>
-                                    <li class="tech-item"><i class="devicon-tailwindcss-original tech-icon-bi"></i> Tailwind CSS</li>
-                                    <li class="tech-item"><i class="devicon-materialui-plain tech-icon-bi"></i> Material UI</li>
-                                    <li class="tech-item"><i class="devicon-figma-plain tech-icon-bi"></i> Figma</li>
-                                </ul>
-                            </div>
-                            
-                            <!-- Columna 2: Backend & Lógica -->
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <span class="tech-category-title" data-section="techStack" data-value="cat2">Backend & Lógica</span>
-                                <ul class="tech-list">
-                                    <li class="tech-item"><i class="devicon-nodejs-plain tech-icon-bi"></i> Node.js</li>
-                                    <li class="tech-item"><i class="devicon-express-original tech-icon-bi"></i> Express</li>
-                                    <li class="tech-item"><i class="devicon-python-plain tech-icon-bi"></i> Python</li>
-                                    <li class="tech-item"><i class="devicon-fastapi-plain tech-icon-bi"></i> FastAPI</li>
-                                </ul>
-                            </div>
-                            
-                                <!-- Columna 3: Base de Datos & CMS -->
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <span class="tech-category-title" data-section="techStack" data-value="cat3">Base de Datos & CMS</span>
-                                <ul class="tech-list">
-                                    <li class="tech-item"><i class="devicon-postgresql-plain tech-icon-bi"></i> PostgreSQL</li>
-                                    <li class="tech-item"><span class="tech-icon-svg me-2" style="-webkit-mask-image: url('assets/shopify.svg'); mask-image: url('assets/shopify.svg');"></span> Shopify</li>
-                                    <li class="tech-item"><i class="bi bi-file-earmark-code tech-icon-bi"></i> Sanity</li>
-                                    <li class="tech-item"><i class="bi bi-file-spreadsheet tech-icon-bi"></i> Openpyxl</li>
-                                </ul>
-                            </div>
-                            
-                            <!-- Columna 4: Herramientas, Despliegue & Datos -->
-                            <div class="col-lg-3 col-md-6 col-12">
-                                <span class="tech-category-title" data-section="techStack" data-value="cat4">Herramientas, Despliegue & Datos</span>
-                                <ul class="tech-list">
-                                    <li class="tech-item"><i class="devicon-streamlit-plain tech-icon-bi"></i> Streamlit</li>
-                                    <li class="tech-item"><i class="bi bi-github tech-icon-bi"></i> GitHub</li>
-                                    <li class="tech-item"><i class="devicon-bitbucket-original tech-icon-bi"></i> Bitbucket</li>
-                                    <li class="tech-item"><i class="devicon-vercel-original tech-icon-bi"></i> Vercel</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- About Section Horizontal -->
-            <section id="aboutus" class="py-6 bg-white">
-                <div class="container px-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-xxl-10">
-                            <div class="text-center mb-5">
-                                <h2 class="display-4 fw-bolder mb-3"><span class="text-gradient" data-section="section" data-value="about">Quiénes Somos</span></h2>
-                                <p class="lead text-muted max-width-700 mx-auto" data-section="section" data-value="aboutSubtitle">Somos estrategas digitales apasionados por convertir problemas complejos en experiencias digitales simples y potentes.</p>
-                            </div>
-                            <div class="row gx-4 mt-5 justify-content-center">
-                                <div class="col-lg-5 col-md-6 mb-4">
-                                    <div class="team-card-vertical shadow-sm">
-                                        <div class="team-avatar-container">
-                                            <div class="avatar-glow"></div>
-                                            <img src="./assets/william.jpeg" class="team-avatar" alt="William Vargas">
-                                        </div>
-                                        <h4 class="fw-bold mb-1">William Vargas</h4>
-                                        <p class="text-muted small mb-4" data-section="cards" data-value="subtitle1">Arquitecto de Software & Consultor</p>
-                                        <div class="d-flex justify-content-center">
-                                            <a href="https://www.linkedin.com/in/tecnowilliam/" class="social-pill" target="_blank"><i class="bi bi-linkedin"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-5 col-md-6 mb-4">
-                                    <div class="team-card-vertical shadow-sm">
-                                        <div class="team-avatar-container">
-                                            <div class="avatar-glow"></div>
-                                            <img src="./assets/audrey.jpg" class="team-avatar" alt="Audrey Lopez">
-                                        </div>
-                                        <h4 class="fw-bold mb-1">Audrey Lopez</h4>
-                                        <p class="text-muted small mb-4" data-section="cards" data-value="subtitle2">Desarrolladora Web Fullstack</p>
-                                        <div class="d-flex justify-content-center">
-                                            <a href="https://www.linkedin.com/in/lopez-audrey/" class="social-pill" target="_blank"><i class="bi bi-linkedin"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Projects Section -->
-            <section id="projects" class="py-6 bg-white border-top border-bottom">
-                <div class="container px-5">
-                    <div class="text-center mb-5">
-                        <h2 class="display-4 fw-bolder mb-2"><span class="text-gradient" data-section="section" data-value="title">Proyectos Destacados</span></h2>
-                        <p class="lead text-muted">Casos de éxito donde la tecnología resolvió desafíos reales.</p>
-                    </div>
-                    <div class="row gx-5 justify-content-center" id="projects-container"></div>
-                </div>
-            </section>
-
-            <!-- Contact Section -->
-            <section id="contact" class="py-6 bg-soft-gray border-top">
-                <div class="container px-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-8">
-                            <div class="bg-white rounded-5 shadow-sm p-5 border">
-                                <div class="text-center mb-5">
-                                    <h2 class="fw-bold display-5" data-section="contact" data-value="title">Hablemos de tu idea</h2>
-                                    <p class="text-muted" data-section="contact" data-value="subtitle">Cuéntanos sobre tu proyecto y descubramos juntos la mejor solución.</p>
-                                </div>
-                                <form id="contactForm" action="https://formspree.io/f/mlgwzklr" method="POST">
-                                    <div class="row">
-                                        <div class="col-md-6 mb-4">
-                                            <label class="small fw-bold text-uppercase mb-2" data-section="contact" data-value="name">Nombre</label>
-                                            <input class="form-control bg-light border-0" id="name" name="name" type="text" placeholder="John Doe" required />
-                                        </div>
-                                        <div class="col-md-6 mb-4">
-                                            <label class="small fw-bold text-uppercase mb-2" data-section="contact" data-value="email">Email</label>
-                                            <input class="form-control bg-light border-0" id="email" name="email" type="email" placeholder="john@example.com" required />
-                                        </div>
-                                        <div class="col-12 mb-4">
-                                            <label class="small fw-bold text-uppercase mb-2" data-section="contact" data-value="message">Mensaje</label>
-                                            <textarea class="form-control bg-light border-0" id="message" name="message" style="height: 12rem" placeholder="¿Qué necesitas construir?" required></textarea>
-                                        </div>
-                                        <div class="col-12">
-                                            <button class="btn btn-primary btn-lg w-100 py-3" id="submitButton" type="submit" data-section="contact" data-value="button">Enviar Mensaje</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <!-- Footer -->
-        <footer class="bg-royal-slate py-5">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto mb-4 mb-sm-0">
-                        <a class="d-flex align-items-center text-decoration-none" href="index.html">
-                            <img src="assets/logo.png" alt="Logo" height="70" class="me-4">
-                            <div class="d-flex flex-column lh-1">
-                                <span class="text-white fw-bolder" style="font-size: 1.5rem;letter-spacing: 0.05rem;">SOLUCIONES</span>
-                                <span class="text-white opacity-50 small fw-bold" style="font-size: 1rem; letter-spacing: 0.12rem;">TECNOLÓGICAS</span>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-auto">
-                        <div class="small m-0 text-white opacity-50">Copyright &copy; 2026. Soluciones tecnologicas.</div>
-                    </div>
-                    <div class="col-auto mt-3 mt-sm-0">
-                        <a class="link-light small text-decoration-none opacity-75 px-2" href="#projects">Proyectos</a>
-                        <span class="text-white opacity-25">|</span>
-                        <a class="link-light small text-decoration-none opacity-75 px-2" href="#contact">Contacto</a>
-                    </div>
-                </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Soluciones tecnologicas</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+    <!-- Custom Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap icons-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Devicons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body class="d-flex flex-column h-100">
+    <main class="flex-shrink-0">
+      <!-- Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light sticky-top py-3">
+        <div class="container px-4 px-lg-5">
+          <a
+            class="navbar-brand fw-bolder d-flex align-items-center"
+            href="index.html"
+          >
+            <img src="assets/logo.png" alt="Logo" height="40" class="me-2" />
+            <div class="d-flex flex-column lh-1">
+              <span class="text-gradient">SOLUCIONES</span>
+              <span
+                class="text-gradient small"
+                style="font-size: 0.65rem; letter-spacing: 0.15rem"
+                >TECNOLÓGICAS</span
+              >
             </div>
-        </footer>
-        <!-- Custom Toast Notification -->
-        <div class="toast-container position-fixed bottom-0 end-0 p-4" style="z-index: 1060;">
-            <div id="contactToast" class="toast border-0 shadow-lg rounded-4" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="d-flex align-items-center p-3">
-                    <div id="toastIcon" class="me-3 fs-4"></div>
-                    <div class="toast-body p-0 fw-medium" id="toastMessage"></div>
-                    <button type="button" class="btn-close ms-auto shadow-none" data-bs-dismiss="toast" aria-label="Close"></button>
+          </a>
+          <button
+            class="navbar-toggler border-0 shadow-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bold align-items-center"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link px-3"
+                  href="#projects"
+                  data-section="header"
+                  data-value="buton2"
+                  >Proyectos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link px-3"
+                  href="#technologies"
+                  data-section="section"
+                  data-value="technologies"
+                  >Tecnologías</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link px-3"
+                  href="#aboutus"
+                  data-section="section"
+                  data-value="about"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link px-3"
+                  href="#contact"
+                  data-section="section"
+                  data-value="contact"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item ms-lg-3">
+                <div
+                  class="d-flex align-items-center bg-light rounded-pill px-3 py-1 border shadow-sm"
+                >
+                  <span class="small fw-bold text-muted me-2">ES</span>
+                  <label class="switch-sm">
+                    <input
+                      type="checkbox"
+                      id="languageToggle"
+                      data-language="es"
+                    />
+                    <span class="slider-sm"></span>
+                  </label>
+                  <span
+                    id="languageText"
+                    class="small fw-bold text-gradient ms-2"
+                    >EN</span
+                  >
                 </div>
-                <div class="toast-progress-bar"></div>
-            </div>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="scripts.js" type="text/javascript"></script>
-    </body>
+      <!-- Hero Section -->
+      <header class="py-6 overflow-hidden">
+        <div class="container px-4 px-lg-5">
+          <div
+            class="row gx-5 align-items-center justify-content-center text-center"
+          >
+            <div class="col-xxl-10">
+              <div
+                class="badge bg-royal-slate text-white mb-4 px-3 py-2 rounded-pill shadow-sm"
+              >
+                <div
+                  class="text-uppercase small fw-bold letter-spacing-1"
+                  data-section="header"
+                  data-value="badgeText"
+                >
+                  DISEÑO · DESARROLLO · SOLUCIONES A MEDIDA
+                </div>
+              </div>
+              <h1 class="display-1 fw-extra-bold mb-4">
+                <span
+                  class="text-royal-slate"
+                  data-section="header"
+                  data-value="titlePart1"
+                  >Creamos el Software que</span
+                ><br />
+                <span
+                  class="text-gradient"
+                  data-section="header"
+                  data-value="titlePart2"
+                  >Escala tu Negocio</span
+                >
+              </h1>
+              <p
+                class="lead fw-medium text-muted mb-5 px-lg-5 mx-auto max-width-700"
+                data-section="header"
+                data-value="subtitle"
+              >
+                No solo escribimos código; diseñamos soluciones estratégicas
+                pensadas en los objetivos reales de cada cliente.
+              </p>
+              <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+                <a
+                  class="btn btn-primary btn-lg"
+                  href="#contact"
+                  data-section="section"
+                  data-value="contact"
+                  >Inicia un Proyecto</a
+                >
+                <a
+                  class="btn btn-outline-dark btn-lg"
+                  href="#projects"
+                  data-section="header"
+                  data-value="buton2"
+                  >Ver Proyectos</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Services Row -->
+      <section class="py-5 bg-soft-gray mt-n5 position-relative z-index-2">
+        <div class="container px-4 px-lg-5">
+          <div class="row gx-4">
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="service-card-mini shadow-sm">
+                <div class="service-icon-box shadow-sm">
+                  <i class="bi bi-cpu"></i>
+                </div>
+                <h4
+                  class="h5 fw-bold text-royal-slate"
+                  data-section="services"
+                  data-value="title1"
+                >
+                  Desarrollo Web
+                </h4>
+                <p
+                  class="small text-muted mb-0"
+                  data-section="services"
+                  data-value="desc1"
+                >
+                  Soluciones personalizadas y escalables adaptadas a tus
+                  procesos de negocio.
+                </p>
+                <div class="service-num">01</div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+              <div class="service-card-mini shadow-sm">
+                <div class="service-icon-box shadow-sm">
+                  <i class="bi bi-layers"></i>
+                </div>
+                <h4
+                  class="h5 fw-bold text-royal-slate"
+                  data-section="services"
+                  data-value="title2"
+                >
+                  Arquitectura UX/UI
+                </h4>
+                <p
+                  class="small text-muted mb-0"
+                  data-section="services"
+                  data-value="desc2"
+                >
+                  Interfaces intuitivas que maximizan la conversión y
+                  satisfacción de usuarios.
+                </p>
+                <div class="service-num">02</div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-card-mini shadow-sm">
+                <div class="service-icon-box shadow-sm">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h4
+                  class="h5 fw-bold text-royal-slate"
+                  data-section="services"
+                  data-value="title3"
+                >
+                  Mantenimiento & Soporte
+                </h4>
+                <p
+                  class="small text-muted mb-0"
+                  data-section="services"
+                  data-value="desc3"
+                >
+                  Tu software siempre al día, optimizado y protegido contra
+                  amenazas.
+                </p>
+                <div class="service-num">03</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us / Approach -->
+      <section class="py-6 bg-white overflow-hidden">
+        <div class="container px-4 px-lg-5">
+          <div class="row gx-5 align-items-center">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+              <div class="collage-container">
+                <div class="dot-pattern"></div>
+                <img
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                  class="collage-main-img"
+                  alt="Software Development"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80"
+                  class="collage-sub-img"
+                  alt="Tech Team"
+                />
+                <div class="experience-badge shadow-lg">
+                  <span
+                    class="small-text"
+                    data-section="approach"
+                    data-value="badgeText"
+                    >CREANDO SOLUCIONES<br />DESDE ENTONCES</span
+                  >
+                  <span class="small-text">2023</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 ps-lg-5">
+              <div class="d-flex align-items-center mb-3">
+                <div class="bg-gradient-premium p-1 rounded-circle me-3">
+                  <div class="bg-white rounded-circle p-1">
+                    <i
+                      class="bi bi-chat-left-dots text-gradient fs-6 d-block"
+                    ></i>
+                  </div>
+                </div>
+                <span
+                  class="small fw-bold text-uppercase text-gradient letter-spacing-1"
+                  data-section="approach"
+                  data-value="subtitle"
+                  >Sobre Nosotros</span
+                >
+              </div>
+              <h2 class="display-4 fw-extra-bold mb-4">
+                <span
+                  class="text-royal-slate"
+                  data-section="approach"
+                  data-value="titlePart1"
+                  >Creamos Soluciones de</span
+                ><br />
+                <span
+                  class="text-gradient"
+                  data-section="approach"
+                  data-value="titlePart2"
+                  >Software de Alto Impacto</span
+                >
+              </h2>
+              <p
+                class="text-muted mb-5 lead fw-medium"
+                data-section="approach"
+                data-value="mainDesc"
+              >
+                Transformamos la complejidad técnica en una ventaja competitiva
+                real. Nuestro enfoque combina ingeniería de precisión con diseño
+                centrado en el usuario para escalar tu visión digital.
+              </p>
+
+              <div class="info-item-box d-flex align-items-start mb-4">
+                <div
+                  class="feature bg-gradient-premium text-white rounded-circle me-4 shadow-sm"
+                >
+                  <i class="bi bi-lightning-charge fs-5"></i>
+                </div>
+                <div>
+                  <h4
+                    class="h5 fw-bold text-royal-slate"
+                    data-section="approach"
+                    data-value="point1Title"
+                  >
+                    Desarrollo Ágil
+                  </h4>
+                  <p
+                    class="small text-muted mb-0"
+                    data-section="approach"
+                    data-value="point1Desc"
+                  >
+                    Entregas incrementales y comunicación constante para
+                    garantizar el alineamiento total con tus metas.
+                  </p>
+                </div>
+              </div>
+
+              <div class="info-item-box d-flex align-items-start mb-5">
+                <div
+                  class="feature bg-gradient-premium text-white rounded-circle me-4 shadow-sm"
+                >
+                  <i class="bi bi-shield-lock fs-5"></i>
+                </div>
+                <div>
+                  <h4
+                    class="h5 fw-bold text-royal-slate"
+                    data-section="approach"
+                    data-value="point2Title"
+                  >
+                    Código de Confianza
+                  </h4>
+                  <p
+                    class="small text-muted mb-0"
+                    data-section="approach"
+                    data-value="point2Desc"
+                  >
+                    Arquitecturas seguras y escalables construidas bajo los más
+                    altos estándares de calidad internacional.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technologies Section -->
+      <section id="technologies" class="py-6 bg-white">
+        <div class="container px-4 px-lg-5">
+          <div class="text-center mb-5">
+            <h2 class="display-4 fw-extra-bold mb-3">
+              <span
+                class="text-gradient"
+                data-section="section"
+                data-value="technologies"
+                >Tecnologías que Dominamos</span
+              >
+            </h2>
+            <p
+              class="lead text-muted"
+              data-section="section"
+              data-value="techSubtitle"
+            >
+              Herramientas de vanguardia para construir soluciones robustas.
+            </p>
+          </div>
+
+          <div class="tech-panel bg-dark-deep rounded-5 border-curly mt-5">
+            <div class="row g-5">
+              <!-- Columna 1: Frontend & Diseño -->
+              <div class="col-lg-3 col-md-6 col-12">
+                <span
+                  class="tech-category-title"
+                  data-section="techStack"
+                  data-value="cat1"
+                  >Frontend & Diseño</span
+                >
+                <ul class="tech-list">
+                  <li class="tech-item">
+                    <i class="devicon-javascript-plain tech-icon-bi"></i>
+                    JavaScript
+                  </li>
+                  <li class="tech-item">
+                    <i class="devicon-react-original tech-icon-bi"></i> React
+                  </li>
+                  <li class="tech-item">
+                    <i class="devicon-html5-plain tech-icon-bi"></i> HTML
+                  </li>
+                  <li class="tech-item">
+                    <i class="devicon-css3-plain tech-icon-bi"></i> CSS
+                  </li>
+                  <li class="tech-item">
+                    <i class="devicon-bootstrap-plain tech-icon-bi"></i>
+                    Bootstrap
+                  </li>
+                  <li class="tech-item">
+                    <i class="devicon-tailwindcss-original tech-icon-bi"></i>
+                    Tailwind CSS
+                  </li>
+                  <li class="tech-item">
+                    <i class="devicon-materialui-plain tech-icon-bi"></i>
+                    Material UI
+                  </li>
+                  <li class="tech-item">
+                    <i class="devicon-figma-plain tech-icon-bi"></i> Figma
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Columna 2: Backend & Lógica -->
+              <div class="col-lg-3 col-md-6 col-12">
+                <span
+                  class="tech-category-title"
+                  data-section="techStack"
+                  data-value="cat2"
+                  >Backend & Lógica</span
+                >
+                <ul class="tech-list">
+                  <li class="tech-item">
+                    <i class="devicon-nodejs-plain tech-icon-bi"></i> Node.js
+                  </li>
+                  <li class="tech-item">
+                    <i class="devicon-express-original tech-icon-bi"></i>
+                    Express
+                  </li>
+                  <li class="tech-item">
+                    <i class="devicon-python-plain tech-icon-bi"></i> Python
+                  </li>
+                  <li class="tech-item">
+                    <i class="devicon-fastapi-plain tech-icon-bi"></i> FastAPI
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Columna 3: Base de Datos & CMS -->
+              <div class="col-lg-3 col-md-6 col-12">
+                <span
+                  class="tech-category-title"
+                  data-section="techStack"
+                  data-value="cat3"
+                  >Base de Datos & CMS</span
+                >
+                <ul class="tech-list">
+                  <li class="tech-item">
+                    <i class="devicon-postgresql-plain tech-icon-bi"></i>
+                    PostgreSQL
+                  </li>
+                  <li class="tech-item">
+                    <span
+                      class="tech-icon-svg me-2"
+                      style="
+                        -webkit-mask-image: url(&quot;assets/shopify.svg&quot;);
+                        mask-image: url(&quot;assets/shopify.svg&quot;);
+                      "
+                    ></span>
+                    Shopify
+                  </li>
+                  <li class="tech-item">
+                    <i class="bi bi-file-earmark-code tech-icon-bi"></i> Sanity
+                  </li>
+                  <li class="tech-item">
+                    <i class="bi bi-file-spreadsheet tech-icon-bi"></i> Openpyxl
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Columna 4: Herramientas, Despliegue & Datos -->
+              <div class="col-lg-3 col-md-6 col-12">
+                <span
+                  class="tech-category-title"
+                  data-section="techStack"
+                  data-value="cat4"
+                  >Herramientas, Despliegue & Datos</span
+                >
+                <ul class="tech-list">
+                  <li class="tech-item">
+                    <i class="devicon-streamlit-plain tech-icon-bi"></i>
+                    Streamlit
+                  </li>
+                  <li class="tech-item">
+                    <i class="bi bi-github tech-icon-bi"></i> GitHub
+                  </li>
+                  <li class="tech-item">
+                    <i class="devicon-bitbucket-original tech-icon-bi"></i>
+                    Bitbucket
+                  </li>
+                  <li class="tech-item">
+                    <i class="devicon-vercel-original tech-icon-bi"></i> Vercel
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section Horizontal -->
+      <section id="aboutus" class="py-6 bg-white">
+        <div class="container px-4 px-lg-5">
+          <div class="row gx-5 justify-content-center">
+            <div class="col-xxl-10">
+              <div class="text-center mb-5">
+                <h2 class="display-4 fw-bolder mb-3">
+                  <span
+                    class="text-gradient"
+                    data-section="section"
+                    data-value="about"
+                    >Quiénes Somos</span
+                  >
+                </h2>
+                <p
+                  class="lead text-muted max-width-700 mx-auto"
+                  data-section="section"
+                  data-value="aboutSubtitle"
+                >
+                  Somos estrategas digitales apasionados por convertir problemas
+                  complejos en experiencias digitales simples y potentes.
+                </p>
+              </div>
+              <div class="row gx-4 mt-5 justify-content-center">
+                <div class="col-lg-5 col-md-6 mb-4">
+                  <div class="team-card-vertical shadow-sm">
+                    <div class="team-avatar-container">
+                      <div class="avatar-glow"></div>
+                      <img
+                        src="./assets/william.jpeg"
+                        class="team-avatar"
+                        alt="William Vargas"
+                      />
+                    </div>
+                    <h4 class="fw-bold mb-1">William Vargas</h4>
+                    <p
+                      class="text-muted small mb-4"
+                      data-section="cards"
+                      data-value="subtitle1"
+                    >
+                      Arquitecto de Software & Consultor
+                    </p>
+                    <div class="d-flex justify-content-center">
+                      <a
+                        href="https://www.linkedin.com/in/tecnowilliam/"
+                        class="social-pill"
+                        target="_blank"
+                        ><i class="bi bi-linkedin"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-5 col-md-6 mb-4">
+                  <div class="team-card-vertical shadow-sm">
+                    <div class="team-avatar-container">
+                      <div class="avatar-glow"></div>
+                      <img
+                        src="./assets/audrey.jpg"
+                        class="team-avatar"
+                        alt="Audrey Lopez"
+                      />
+                    </div>
+                    <h4 class="fw-bold mb-1">Audrey Lopez</h4>
+                    <p
+                      class="text-muted small mb-4"
+                      data-section="cards"
+                      data-value="subtitle2"
+                    >
+                      Desarrolladora Web Fullstack
+                    </p>
+                    <div class="d-flex justify-content-center">
+                      <a
+                        href="https://www.linkedin.com/in/lopez-audrey/"
+                        class="social-pill"
+                        target="_blank"
+                        ><i class="bi bi-linkedin"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="py-6 bg-white border-top border-bottom">
+        <div class="container px-4 px-lg-5">
+          <div class="text-center mb-5">
+            <h2 class="display-4 fw-bolder mb-2">
+              <span
+                class="text-gradient"
+                data-section="section"
+                data-value="title"
+                >Proyectos Destacados</span
+              >
+            </h2>
+            <p
+              class="lead text-muted"
+              data-section="section"
+              data-value="projectsSubtitle"
+            >
+              Casos de éxito donde la tecnología resolvió desafíos reales.
+            </p>
+          </div>
+          <div
+            class="row gx-5 justify-content-center"
+            id="projects-container"
+          ></div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-6 bg-soft-gray border-top">
+        <div class="container px-4 px-lg-5">
+          <div class="row gx-5 justify-content-center">
+            <div class="col-lg-8">
+              <div class="bg-white rounded-5 shadow-sm p-4 p-md-5 border">
+                <div class="text-center mb-5">
+                  <h2
+                    class="fw-bold display-5"
+                    data-section="contact"
+                    data-value="title"
+                  >
+                    Hablemos de tu idea
+                  </h2>
+                  <p
+                    class="text-muted"
+                    data-section="contact"
+                    data-value="subtitle"
+                  >
+                    Cuéntanos sobre tu proyecto y descubramos juntos la mejor
+                    solución.
+                  </p>
+                </div>
+                <form
+                  id="contactForm"
+                  action="https://formspree.io/f/mlgwzklr"
+                  method="POST"
+                >
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <label
+                        class="small fw-bold text-uppercase mb-2"
+                        data-section="contact"
+                        data-value="name"
+                        >Nombre</label
+                      >
+                      <input
+                        class="form-control bg-light border-0"
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="John Doe"
+                        data-section="contact"
+                        data-value="namePlaceholder"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <label
+                        class="small fw-bold text-uppercase mb-2"
+                        data-section="contact"
+                        data-value="email"
+                        >Email</label
+                      >
+                      <input
+                        class="form-control bg-light border-0"
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="john@example.com"
+                        data-section="contact"
+                        data-value="emailPlaceholder"
+                        required
+                      />
+                    </div>
+                    <div class="col-12 mb-4">
+                      <label
+                        class="small fw-bold text-uppercase mb-2"
+                        data-section="contact"
+                        data-value="message"
+                        >Mensaje</label
+                      >
+                      <textarea
+                        class="form-control bg-light border-0"
+                        id="message"
+                        name="message"
+                        style="height: 12rem"
+                        placeholder="¿Qué necesitas construir?"
+                        data-section="contact"
+                        data-value="messagePlaceholder"
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <button
+                        class="btn btn-primary btn-lg w-100 py-3"
+                        id="submitButton"
+                        type="submit"
+                        data-section="contact"
+                        data-value="button"
+                      >
+                        Enviar Mensaje
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-royal-slate py-5">
+      <div class="container px-4 px-lg-5">
+        <div
+          class="row align-items-center justify-content-between flex-column flex-sm-row"
+        >
+          <div class="col-auto mb-4 mb-sm-0">
+            <a
+              class="d-flex align-items-center text-decoration-none"
+              href="index.html"
+            >
+              <img src="assets/logo.png" alt="Logo" height="70" class="me-4" />
+              <div class="d-flex flex-column lh-1">
+                <span
+                  class="text-white fw-bolder"
+                  style="font-size: 1.5rem; letter-spacing: 0.05rem"
+                  data-section="footer"
+                  data-value="titlePart1"
+                  >SOLUCIONES</span
+                >
+                <span
+                  class="text-white opacity-50 small fw-bold"
+                  style="font-size: 1rem; letter-spacing: 0.12rem"
+                  data-section="footer"
+                  data-value="titlePart2"
+                  >TECNOLÓGICAS</span
+                >
+              </div>
+            </a>
+          </div>
+          <div class="col-auto">
+            <div
+              class="small m-0 text-white opacity-50"
+              data-section="footer"
+              data-value="copyright"
+            >
+              Copyright &copy; 2026. Soluciones tecnologicas.
+            </div>
+          </div>
+          <div class="col-auto mt-3 mt-sm-0">
+            <a
+              class="link-light small text-decoration-none opacity-75 px-2"
+              href="#projects"
+              >Proyectos</a
+            >
+            <span class="text-white opacity-25">|</span>
+            <a
+              class="link-light small text-decoration-none opacity-75 px-2"
+              href="#contact"
+              >Contacto</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Custom Toast Notification -->
+    <div
+      class="toast-container position-fixed bottom-0 end-0 p-4"
+      style="z-index: 1060"
+    >
+      <div
+        id="contactToast"
+        class="toast border-0 shadow-lg rounded-4"
+        role="alert"
+        aria-live="assertive"
+        aria-atomic="true"
+      >
+        <div class="d-flex align-items-center p-3">
+          <div id="toastIcon" class="me-3 fs-4"></div>
+          <div class="toast-body p-0 fw-medium" id="toastMessage"></div>
+          <button
+            type="button"
+            class="btn-close ms-auto shadow-none"
+            data-bs-dismiss="toast"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="toast-progress-bar"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="scripts.js" type="text/javascript"></script>
+  </body>
 </html>

@@ -1,72 +1,85 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const languageToggle = document.getElementById('languageToggle');
-    const languageText = document.getElementById('languageText');
-    const projectsContainer = document.getElementById('projects-container');
-    
-    const textsToChange = document.querySelectorAll("[data-section]");
+document.addEventListener("DOMContentLoaded", () => {
+  const languageToggle = document.getElementById("languageToggle");
+  const languageText = document.getElementById("languageText");
+  const projectsContainer = document.getElementById("projects-container");
 
-    let currentLanguage = 'es';
+  const textsToChange = document.querySelectorAll("[data-section]");
 
-    const loadLanguage = (language) => {
-        fetch(`${language}.json`)
-            .then((response) => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! Status: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then((data) => {
-                textsToChange.forEach((el) => {
-                    const section = el.dataset.section;
-                    const value = el.dataset.value;
-                    el.innerHTML = data[section][value];
-                });
+  let currentLanguage = "es";
 
-                const projects = data.projects; 
-                renderProjects(projects);
-            })
-            .catch((error) => {
-                console.error("Error al cargar el archivo de idioma:", error);
-            });
-    };
+  const loadLanguage = (language) => {
+    fetch(`${language}.json`)
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        textsToChange.forEach((el) => {
+          const section = el.dataset.section;
+          const value = el.dataset.value;
 
-    const renderProjects = (projects) => {
-        projectsContainer.innerHTML = '';
-        Object.keys(projects).forEach((key) => {
-            const project = projects[key];
-            
-            let buttonsHTML = '';
-            if (Array.isArray(project.buttons) && project.buttons.length) {
-                const primaryBtn = project.buttons[0];
-                const secondaryBtns = project.buttons.slice(1);
+          if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
+            el.placeholder = data[section][value];
+          } else {
+            el.innerHTML = data[section][value];
+          }
+        });
 
-                // Helper to get icons based on text
-                const getIcon = (text) => {
-                    const t = text.toLowerCase();
-                    if (t.includes('landing')) return 'bi-globe';
-                    if (t.includes('app') || t.includes('aplicación')) return 'bi-phone';
-                    if (t.includes('diseño') || t.includes('design')) return 'bi-palette';
-                    return 'bi-arrow-up-right-circle';
-                };
+        const projects = data.projects;
+        renderProjects(projects);
+      })
+      .catch((error) => {
+        console.error("Error al cargar el archivo de idioma:", error);
+      });
+  };
 
-                buttonsHTML = `
+  const renderProjects = (projects) => {
+    projectsContainer.innerHTML = "";
+    Object.keys(projects).forEach((key) => {
+      const project = projects[key];
+
+      let buttonsHTML = "";
+      if (Array.isArray(project.buttons) && project.buttons.length) {
+        const primaryBtn = project.buttons[0];
+        const secondaryBtns = project.buttons.slice(1);
+
+        // Helper to get icons based on text
+        const getIcon = (text) => {
+          const t = text.toLowerCase();
+          if (t.includes("landing")) return "bi-globe";
+          if (t.includes("app") || t.includes("aplicación")) return "bi-phone";
+          if (t.includes("diseño") || t.includes("design")) return "bi-palette";
+          return "bi-arrow-up-right-circle";
+        };
+
+        buttonsHTML = `
                     <a href="${primaryBtn.link}" class="btn btn-primary btn-sm w-100 mb-3" target="_blank">${primaryBtn.text}</a>
-                    ${secondaryBtns.length ? `
+                    ${
+                      secondaryBtns.length
+                        ? `
                         <div class="secondary-actions-row">
-                            ${secondaryBtns.map(btn => `
+                            ${secondaryBtns
+                              .map(
+                                (btn) => `
                                 <a href="${btn.link}" class="project-link-sm" target="_blank">
                                     <i class="bi ${getIcon(btn.text)}"></i>
                                     ${btn.text}
                                 </a>
-                            `).join('')}
+                            `,
+                              )
+                              .join("")}
                         </div>
-                    ` : ''}
+                    `
+                        : ""
+                    }
                 `;
-            } else {
-                buttonsHTML = `<a href="${project.link}" class="btn btn-primary btn-sm w-100" target="_blank">${project.buttonText}</a>`;
-            }
+      } else {
+        buttonsHTML = `<a href="${project.link}" class="btn btn-primary btn-sm w-100" target="_blank">${project.buttonText}</a>`;
+      }
 
-            projectsContainer.innerHTML += `
+      projectsContainer.innerHTML += `
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="project-card h-100 border-0">
                         <div class="position-relative overflow-hidden">
@@ -77,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             <p class="text-muted small mb-4">${project.description}</p>
                             <div class="mt-auto">
                                 <div class="d-flex flex-wrap mb-3">
-                                    ${project.technologies.map(tech => `<span class="technology-tag">${tech}</span>`).join('')}
+                                    ${project.technologies.map((tech) => `<span class="technology-tag">${tech}</span>`).join("")}
                                 </div>
                                 ${buttonsHTML}
                             </div>
@@ -85,72 +98,81 @@ document.addEventListener('DOMContentLoaded', () => {
                     </div>
                 </div>
             `;
-        });
-    };
-
-    // Form Handling with Formspree and Custom Toast
-    const contactForm = document.getElementById('contactForm');
-    const toastEl = document.getElementById('contactToast');
-    const contactToast = new bootstrap.Toast(toastEl, { delay: 5000 });
-
-    const showToast = (message, type = 'success') => {
-        const toastMsg = document.getElementById('toastMessage');
-        const toastIcon = document.getElementById('toastIcon');
-        
-        toastEl.classList.remove('success', 'error');
-        toastEl.classList.add(type);
-        
-        toastIcon.innerHTML = type === 'success' 
-            ? '<i class="bi bi-check-circle-fill"></i>' 
-            : '<i class="bi bi-exclamation-triangle-fill"></i>';
-            
-        toastMsg.textContent = message;
-        contactToast.show();
-    };
-
-    if (contactForm) {
-        contactForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-            const submitBtn = document.getElementById('submitButton');
-            const originalText = submitBtn.innerHTML;
-            const formData = new FormData(contactForm);
-            
-            submitBtn.disabled = true;
-            submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
-
-            try {
-                const response = await fetch(contactForm.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: { 'Accept': 'application/json' }
-                });
-
-                if (response.ok) {
-                    showToast(currentLanguage === 'es' 
-                        ? '¡Gracias! Tu mensaje ha sido enviado con éxito.' 
-                        : 'Thank you! Your message has been sent successfully.', 'success');
-                    contactForm.reset();
-                } else {
-                    showToast(currentLanguage === 'es' 
-                        ? 'Hubo un problema. Inténtalo de nuevo.' 
-                        : 'There was a problem. Please try again.', 'error');
-                }
-            } catch (error) {
-                showToast(currentLanguage === 'es' 
-                    ? 'Error de conexión.' 
-                    : 'Connection error.', 'error');
-            } finally {
-                submitBtn.disabled = false;
-                submitBtn.innerHTML = originalText;
-            }
-        });
-    }
-
-    languageToggle.addEventListener('change', () => {
-        currentLanguage = languageToggle.checked ? 'en' : 'es';
-        languageText.textContent = currentLanguage.toUpperCase();
-        loadLanguage(currentLanguage);
     });
+  };
 
+  // Form Handling with Formspree and Custom Toast
+  const contactForm = document.getElementById("contactForm");
+  const toastEl = document.getElementById("contactToast");
+  const contactToast = new bootstrap.Toast(toastEl, { delay: 5000 });
+
+  const showToast = (message, type = "success") => {
+    const toastMsg = document.getElementById("toastMessage");
+    const toastIcon = document.getElementById("toastIcon");
+
+    toastEl.classList.remove("success", "error");
+    toastEl.classList.add(type);
+
+    toastIcon.innerHTML =
+      type === "success"
+        ? '<i class="bi bi-check-circle-fill"></i>'
+        : '<i class="bi bi-exclamation-triangle-fill"></i>';
+
+    toastMsg.textContent = message;
+    contactToast.show();
+  };
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const submitBtn = document.getElementById("submitButton");
+      const originalText = submitBtn.innerHTML;
+      const formData = new FormData(contactForm);
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML =
+        '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: "POST",
+          body: formData,
+          headers: { Accept: "application/json" },
+        });
+
+        if (response.ok) {
+          showToast(
+            currentLanguage === "es"
+              ? "¡Gracias! Tu mensaje ha sido enviado con éxito."
+              : "Thank you! Your message has been sent successfully.",
+            "success",
+          );
+          contactForm.reset();
+        } else {
+          showToast(
+            currentLanguage === "es"
+              ? "Hubo un problema. Inténtalo de nuevo."
+              : "There was a problem. Please try again.",
+            "error",
+          );
+        }
+      } catch (error) {
+        showToast(
+          currentLanguage === "es" ? "Error de conexión." : "Connection error.",
+          "error",
+        );
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+      }
+    });
+  }
+
+  languageToggle.addEventListener("change", () => {
+    currentLanguage = languageToggle.checked ? "en" : "es";
+    languageText.textContent = currentLanguage.toUpperCase();
     loadLanguage(currentLanguage);
+  });
+
+  loadLanguage(currentLanguage);
 });
