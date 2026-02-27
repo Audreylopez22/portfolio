@@ -34,6 +34,38 @@ document.addEventListener('DOMContentLoaded', () => {
         projectsContainer.innerHTML = '';
         Object.keys(projects).forEach((key) => {
             const project = projects[key];
+            
+            let buttonsHTML = '';
+            if (Array.isArray(project.buttons) && project.buttons.length) {
+                const primaryBtn = project.buttons[0];
+                const secondaryBtns = project.buttons.slice(1);
+
+                // Helper to get icons based on text
+                const getIcon = (text) => {
+                    const t = text.toLowerCase();
+                    if (t.includes('landing')) return 'bi-globe';
+                    if (t.includes('app') || t.includes('aplicación')) return 'bi-phone';
+                    if (t.includes('diseño') || t.includes('design')) return 'bi-palette';
+                    return 'bi-arrow-up-right-circle';
+                };
+
+                buttonsHTML = `
+                    <a href="${primaryBtn.link}" class="btn btn-primary btn-sm w-100 mb-3" target="_blank">${primaryBtn.text}</a>
+                    ${secondaryBtns.length ? `
+                        <div class="secondary-actions-row">
+                            ${secondaryBtns.map(btn => `
+                                <a href="${btn.link}" class="project-link-sm" target="_blank">
+                                    <i class="bi ${getIcon(btn.text)}"></i>
+                                    ${btn.text}
+                                </a>
+                            `).join('')}
+                        </div>
+                    ` : ''}
+                `;
+            } else {
+                buttonsHTML = `<a href="${project.link}" class="btn btn-primary btn-sm w-100" target="_blank">${project.buttonText}</a>`;
+            }
+
             projectsContainer.innerHTML += `
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="project-card h-100 border-0">
@@ -47,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <div class="d-flex flex-wrap mb-3">
                                     ${project.technologies.map(tech => `<span class="technology-tag">${tech}</span>`).join('')}
                                 </div>
-                                <a href="${project.link}" class="btn btn-primary btn-sm w-100" target="_blank">${project.buttonText}</a>
+                                ${buttonsHTML}
                             </div>
                         </div>
                     </div>

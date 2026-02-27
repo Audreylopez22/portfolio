@@ -5,15 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Portfolio</title>
+        <title>Soluciones tecnologicas</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+        <link rel="icon" type="image/png" href="assets/logo.png" />
         <!-- Custom Google font-->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Devicons -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
@@ -22,8 +24,12 @@
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-light sticky-top py-3">
                 <div class="container px-5">
-                    <a class="navbar-brand fw-bolder" href="index.html">
-                        <span class="text-gradient">PORTFOLIO</span>
+                    <a class="navbar-brand fw-bolder d-flex align-items-center" href="index.html">
+                        <img src="assets/logo.png" alt="Logo" height="40" class="me-2">
+                        <div class="d-flex flex-column lh-1">
+                            <span class="text-gradient">SOLUCIONES</span>
+                            <span class="text-gradient small" style="font-size: 0.65rem; letter-spacing: 0.15rem;">TECNOLÓGICAS</span>
+                        </div>
                     </a>
                     <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -58,8 +64,8 @@
                                 </div>
                             </div>
                             <h1 class="display-1 fw-extra-bold mb-4">
-                                <span class="text-royal-slate">Creamos el Software que</span><br>
-                                <span class="text-gradient">Escala tu Negocio</span>
+                                <span class="text-royal-slate" data-section="header" data-value="titlePart1">Creamos el Software que</span><br>
+                                <span class="text-gradient" data-section="header" data-value="titlePart2">Escala tu Negocio</span>
                             </h1>
                             <p class="lead fw-medium text-muted mb-5 px-lg-5 mx-auto max-width-700" data-section="header" data-value="subtitle">
                                 No solo escribimos código; diseñamos soluciones estratégicas pensadas en los objetivos reales de cada cliente.
@@ -153,13 +159,74 @@
                                 </div>
                             </div>
 
-                            <a href="#contact" class="btn btn-primary btn-lg px-5 shadow-lg" data-section="section" data-value="contact">Descubre Más <i class="bi bi-arrow-right ms-2"></i></a>
                         </div>
                     </div>
                 </div>
             </section>
 
-                        <!-- About Section Horizontal -->
+            <!-- Technologies Section -->
+            <section id="technologies" class="py-6 bg-white">
+                <div class="container px-5">
+                    <div class="text-center mb-5">
+                        <h2 class="display-4 fw-extra-bold mb-3"><span class="text-gradient" data-section="section" data-value="technologies">Tecnologías que Dominamos</span></h2>
+                        <p class="lead text-muted">Herramientas de vanguardia para construir soluciones robustas.</p>
+                    </div>
+                    
+                    <div class="tech-panel bg-dark-deep rounded-5 border-curly mt-5">
+                        <div class="row g-5">
+                            <!-- Columna 1: Frontend & Diseño -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <span class="tech-category-title" data-section="techStack" data-value="cat1">Frontend & Diseño</span>
+                                <ul class="tech-list">
+                                    <li class="tech-item"><i class="devicon-javascript-plain tech-icon-bi"></i> JavaScript</li>
+                                    <li class="tech-item"><i class="devicon-react-original tech-icon-bi"></i> React</li>
+                                    <li class="tech-item"><i class="devicon-html5-plain tech-icon-bi"></i> HTML</li>
+                                    <li class="tech-item"><i class="devicon-css3-plain tech-icon-bi"></i> CSS</li>
+                                    <li class="tech-item"><i class="devicon-bootstrap-plain tech-icon-bi"></i> Bootstrap</li>
+                                    <li class="tech-item"><i class="devicon-tailwindcss-original tech-icon-bi"></i> Tailwind CSS</li>
+                                    <li class="tech-item"><i class="devicon-materialui-plain tech-icon-bi"></i> Material UI</li>
+                                    <li class="tech-item"><i class="devicon-figma-plain tech-icon-bi"></i> Figma</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Columna 2: Backend & Lógica -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <span class="tech-category-title" data-section="techStack" data-value="cat2">Backend & Lógica</span>
+                                <ul class="tech-list">
+                                    <li class="tech-item"><i class="devicon-nodejs-plain tech-icon-bi"></i> Node.js</li>
+                                    <li class="tech-item"><i class="devicon-express-original tech-icon-bi"></i> Express</li>
+                                    <li class="tech-item"><i class="devicon-python-plain tech-icon-bi"></i> Python</li>
+                                    <li class="tech-item"><i class="devicon-fastapi-plain tech-icon-bi"></i> FastAPI</li>
+                                </ul>
+                            </div>
+                            
+                                <!-- Columna 3: Base de Datos & CMS -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <span class="tech-category-title" data-section="techStack" data-value="cat3">Base de Datos & CMS</span>
+                                <ul class="tech-list">
+                                    <li class="tech-item"><i class="devicon-postgresql-plain tech-icon-bi"></i> PostgreSQL</li>
+                                    <li class="tech-item"><span class="tech-icon-svg me-2" style="-webkit-mask-image: url('assets/shopify.svg'); mask-image: url('assets/shopify.svg');"></span> Shopify</li>
+                                    <li class="tech-item"><i class="bi bi-file-earmark-code tech-icon-bi"></i> Sanity</li>
+                                    <li class="tech-item"><i class="bi bi-file-spreadsheet tech-icon-bi"></i> Openpyxl</li>
+                                </ul>
+                            </div>
+                            
+                            <!-- Columna 4: Herramientas, Despliegue & Datos -->
+                            <div class="col-lg-3 col-md-6 col-12">
+                                <span class="tech-category-title" data-section="techStack" data-value="cat4">Herramientas, Despliegue & Datos</span>
+                                <ul class="tech-list">
+                                    <li class="tech-item"><i class="devicon-streamlit-plain tech-icon-bi"></i> Streamlit</li>
+                                    <li class="tech-item"><i class="bi bi-github tech-icon-bi"></i> GitHub</li>
+                                    <li class="tech-item"><i class="devicon-bitbucket-original tech-icon-bi"></i> Bitbucket</li>
+                                    <li class="tech-item"><i class="devicon-vercel-original tech-icon-bi"></i> Vercel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- About Section Horizontal -->
             <section id="aboutus" class="py-6 bg-white">
                 <div class="container px-5">
                     <div class="row gx-5 justify-content-center">
@@ -168,40 +235,30 @@
                                 <h2 class="display-4 fw-bolder mb-3"><span class="text-gradient" data-section="section" data-value="about">Quiénes Somos</span></h2>
                                 <p class="lead text-muted max-width-700 mx-auto" data-section="section" data-value="aboutSubtitle">Somos estrategas digitales apasionados por convertir problemas complejos en experiencias digitales simples y potentes.</p>
                             </div>
-                            <div class="row gx-4 mt-5">
-                                <div class="col-lg-6 mb-4">
-                                    <div class="team-card-horizontal">
-                                        <div class="team-avatar-container me-4">
+                            <div class="row gx-4 mt-5 justify-content-center">
+                                <div class="col-lg-5 col-md-6 mb-4">
+                                    <div class="team-card-vertical shadow-sm">
+                                        <div class="team-avatar-container">
                                             <div class="avatar-glow"></div>
                                             <img src="./assets/william.jpeg" class="team-avatar" alt="William Vargas">
                                         </div>
-                                        <div class="flex-grow-1">
-                                            <div class="d-flex align-items-center mb-1">
-                                                <h4 class="fw-bold mb-0 me-2">William Vargas</h4>
-                                            </div>
-                                            <p class="text-muted small mb-3" data-section="cards" data-value="subtitle1">Arquitecto de Software & Consultor</p>
-                                            <div class="d-flex align-items-center">
-                                                <a href="https://www.linkedin.com/in/tecnowilliam/" class="social-pill me-2"><i class="bi bi-linkedin"></i></a>
-                                                <a href="#" class="social-pill"><i class="bi bi-github"></i></a>
-                                            </div>
+                                        <h4 class="fw-bold mb-1">William Vargas</h4>
+                                        <p class="text-muted small mb-4" data-section="cards" data-value="subtitle1">Arquitecto de Software & Consultor</p>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="https://www.linkedin.com/in/tecnowilliam/" class="social-pill" target="_blank"><i class="bi bi-linkedin"></i></a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="team-card-horizontal">
-                                        <div class="team-avatar-container me-4">
+                                <div class="col-lg-5 col-md-6 mb-4">
+                                    <div class="team-card-vertical shadow-sm">
+                                        <div class="team-avatar-container">
                                             <div class="avatar-glow"></div>
                                             <img src="./assets/audrey.jpg" class="team-avatar" alt="Audrey Lopez">
                                         </div>
-                                        <div class="flex-grow-1">
-                                            <div class="d-flex align-items-center mb-1">
-                                                <h4 class="fw-bold mb-0 me-2">Audrey Lopez</h4>
-                                            </div>
-                                            <p class="text-muted small mb-3" data-section="cards" data-value="subtitle2">Desarrolladora Web Fullstack</p>
-                                            <div class="d-flex align-items-center">
-                                                <a href="https://www.linkedin.com/in/lopez-audrey/" class="social-pill me-2"><i class="bi bi-linkedin"></i></a>
-                                                <a href="#" class="social-pill"><i class="bi bi-github"></i></a>
-                                            </div>
+                                        <h4 class="fw-bold mb-1">Audrey Lopez</h4>
+                                        <p class="text-muted small mb-4" data-section="cards" data-value="subtitle2">Desarrolladora Web Fullstack</p>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="https://www.linkedin.com/in/lopez-audrey/" class="social-pill" target="_blank"><i class="bi bi-linkedin"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -215,7 +272,7 @@
             <section id="projects" class="py-6 bg-white border-top border-bottom">
                 <div class="container px-5">
                     <div class="text-center mb-5">
-                        <h2 class="display-4 fw-bolder mb-3"><span class="text-gradient" data-section="section" data-value="title">Proyectos Destacados</span></h2>
+                        <h2 class="display-4 fw-bolder mb-2"><span class="text-gradient" data-section="section" data-value="title">Proyectos Destacados</span></h2>
                         <p class="lead text-muted">Casos de éxito donde la tecnología resolvió desafíos reales.</p>
                     </div>
                     <div class="row gx-5 justify-content-center" id="projects-container"></div>
@@ -262,8 +319,17 @@
         <footer class="bg-royal-slate py-5">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto mb-4 mb-sm-0">
+                        <a class="d-flex align-items-center text-decoration-none" href="index.html">
+                            <img src="assets/logo.png" alt="Logo" height="70" class="me-4">
+                            <div class="d-flex flex-column lh-1">
+                                <span class="text-white fw-bolder" style="font-size: 1.5rem;letter-spacing: 0.05rem;">SOLUCIONES</span>
+                                <span class="text-white opacity-50 small fw-bold" style="font-size: 1rem; letter-spacing: 0.12rem;">TECNOLÓGICAS</span>
+                            </div>
+                        </a>
+                    </div>
                     <div class="col-auto">
-                        <div class="small m-0 text-white opacity-50">Copyright &copy; 2026 Portfolio. Built for your success.</div>
+                        <div class="small m-0 text-white opacity-50">Copyright &copy; 2026. Soluciones tecnologicas.</div>
                     </div>
                     <div class="col-auto mt-3 mt-sm-0">
                         <a class="link-light small text-decoration-none opacity-75 px-2" href="#projects">Proyectos</a>

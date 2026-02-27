@@ -1,16 +1,23 @@
 {
     "header": {
         "badgeText": "Diseño · Desarrollo · Soluciones a medida",
+        "titlePart1": "Creamos el Software que",
+        "titlePart2": "Escala tu Negocio",
         "subtitle": "Creemos que cada cliente es único. Escuchamos, analizamos y construimos soluciones digitales personalizadas que se adaptan perfectamente a sus necesidades y objetivos específicos.",
-        "title": "Soluciones a Medida para su Negocio",
         "buton2": "Ver Proyectos"
     },
     "section":{
         "title": "Proyectos Destacados",
         "about": "Quiénes Somos",
         "aboutSubtitle": "Aliados en tu camino digital. No solo escribimos código; construimos herramientas que potencian el crecimiento de tu negocio.",
-        "technologies": "Nuestras Tecnologías",
+        "technologies": "Tecnologías que Dominamos",
         "contact": "Inicia un Proyecto"
+    },
+    "techStack": {
+        "cat1": "Frontend & Diseño",
+        "cat2": "Backend & Lógica",
+        "cat3": "Base de Datos & CMS",
+        "cat4": "Herramientas, Despliegue & Datos"
     },
     "services": {
         "title1": "Desarrollo Web",
@@ -31,14 +38,6 @@
         "point2Title": "Servicio de Confianza",
         "point2Desc": "Soporte continuo y comunicación clara durante todo el ciclo de vida del proyecto."
     },
-    "technologies": {
-        "frontend": "Desarrollo Frontend",
-        "frontendDesc": "Creamos interfaces intuitivas, rápidas y totalmente responsivas utilizando las últimas tecnologías del mercado.",
-        "backend": "Backend y Herramientas",
-        "backendDesc": "Arquitecturas sólidas y escalables que soportan el crecimiento de tu negocio.",
-        "design": "Diseño y UI/UX",
-        "designDesc": "Diseños centrados en el usuario que convierten visitas en clientes fieles."
-    },
     "contact": {
         "title": "Construyamos algo Increíble",
         "subtitle": "¿Listo para transformar tu idea en una solución personalizada? Déjanos un mensaje.",
@@ -48,8 +47,8 @@
         "button": "Enviar Mensaje"
     },
     "cards":{
-        "subtitle1": "Desarollador Senior",
-        "subtitle2": "Desarolladora Web"
+        "subtitle1": "Desarrollador Senior",
+        "subtitle2": "Desarrolladora Web"
     },
     "projects": {
         "catarsisLab": {
@@ -92,13 +91,33 @@
             "imageUrl": "assets/SBH.png",
             "buttonText": "Ver sitio"
         },
+        "ConectaUnicamacho": {
+            "title": "Conecta Unicamacho",
+            "description": "Unificamos y centralizamos bases de datos de egresados y empresas en Quinta DB, facilitando el acceso transversal de información institucional.",
+            "technologies": ["Quinta DB", "Bases de Datos"],
+            "link": "https://quintadb.com/apps/bAcSo4W7PcQjKBDvldHmkk/portals/cdxSkMc8nlaRxdVxCJbmk4/login",
+            "imageUrl": "assets/conecta_unicamacho.jpg",
+            "buttonText": "Ver proyecto"
+        },
         "zaku": {
             "title": "Zaku",
-            "description": "Se diseñó una aplicación móvil que facilita la realización de donaciones a organizaciones benéficas y muestra el impacto generado por estas contribuciones.",
-            "technologies": ["Figma"],
-            "link": "https://www.figma.com/proto/BL5nDcu7AnftLsTeT7StBd/Zaku?node-id=78-536&p=f&t=roGIQHHdiVhamEpS-0&scaling=scale-down&content-scaling=fixed&page-id=11%3A2&starting-point-node-id=78%3A536",
+            "description": "Para Zaku, transformamos una idea de impacto social en realidad: diseñamos el mockup en Figma, desarrollamos la landing page y construimos el MVP de una app móvil que conecta donantes con organizaciones benéficas, visibilizando el impacto real de cada contribución.",
+            "technologies": ["Figma", "React", "Django"],
             "imageUrl": "assets/zaku.png",
-            "buttonText": "Ver Diseño"
+            "buttons": [
+                {
+                    "text": "Aplicación",
+                    "link": "https://app.zakuimpacto.com/"
+                },
+                {
+                    "text": "Landing Page",
+                    "link": "https://www.zakuimpacto.com/"
+                },
+                {
+                    "text": "Ver Diseño",
+                    "link": "https://www.figma.com/proto/BL5nDcu7AnftLsTeT7StBd/Zaku?node-id=78-536&p=f&t=roGIQHHdiVhamEpS-0&scaling=scale-down&content-scaling=fixed&page-id=11%3A2&starting-point-node-id=78%3A536"
+                }
+            ]
         }
     }
 }

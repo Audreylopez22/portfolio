@@ -1,16 +1,23 @@
 {
     "header": {
         "badgeText": "Design · Development · Custom solutions",
+        "titlePart1": "We Build the Software that",
+        "titlePart2": "Scales your Business",
         "subtitle": "We believe every client is unique. We listen, analyze, and build custom digital solutions that perfectly fit your specific business needs and goals.",
-        "title": "Tailor-Made Solutions for Your Business",
         "buton2": "View Projects"
     },
     "section":{
         "title": "Featured Projects",
         "about": "Who We Are",
         "aboutSubtitle": "Partners in your digital journey. We don't just write code; we build tools that empower your business to grow.",
-        "technologies": "Our Tech Stack",
+        "technologies": "Technologies we Master",
         "contact": "Start a Project"
+    },
+    "techStack": {
+        "cat1": "Frontend & Design",
+        "cat2": "Backend & Logic",
+        "cat3": "Database & CMS",
+        "cat4": "Tools, Deployment & Data"
     },
     "services": {
         "title1": "Web Development",
@@ -21,7 +28,7 @@
         "desc3": "Keep your software always up-to-date and protected against digital threats."
     },
     "approach": {
-        "badgeText": "Committed to your success",
+        "badgeText": "Creating solutions from ",
         "subtitle": "Our Approach",
         "titlePart1": "We Deliver Quality",
         "titlePart2": "Software Solutions",
@@ -30,14 +37,6 @@
         "point1Desc": "Transparent cost structures that maximize your return on investment.",
         "point2Title": "Trusted Service",
         "point2Desc": "Continuous support and clear communication throughout the project lifecycle."
-    },
-    "technologies": {
-        "frontend": "Frontend Development",
-        "frontendDesc": "We create intuitive, fast, and fully responsive interfaces using the latest market technologies.",
-        "backend": "Backend & Tools",
-        "backendDesc": "Solid and scalable architectures that support your business growth.",
-        "design": "Design & UI/UX",
-        "designDesc": "User-centered designs that turn visitors into loyal customers."
     },
     "contact": {
         "title": "Let's Build Something Great",
@@ -92,13 +91,33 @@
             "imageUrl": "assets/SBH.png",
             "buttonText": "view site"
         },
+        "ConectaUnicamacho": {
+            "title": "Conecta Unicamacho",
+            "description": "We unified and centralized graduate and company databases in Quinta DB, facilitating transversal access to institutional information.",
+            "technologies": ["Quinta DB", "Databases"],
+            "link": "https://quintadb.com/apps/bAcSo4W7PcQjKBDvldHmkk/portals/cdxSkMc8nlaRxdVxCJbmk4/login",
+            "imageUrl": "assets/conecta_unicamacho.jpg",
+            "buttonText": "View project"
+        },
         "zaku": {
             "title": "Zaku",
-            "description": "A website was developed for the Zaku brand, where the products offered by the brand are exhibited, and online sales of these products are managed.",
-            "technologies": ["Figma"],
-            "link": "https://www.figma.com/proto/BL5nDcu7AnftLsTeT7StBd/Zaku?node-id=78-536&p=f&t=roGIQHHdiVhamEpS-0&scaling=scale-down&content-scaling=fixed&page-id=11%3A2&starting-point-node-id=78%3A536",
-            "imageUrl": "assets/Zaku.png",
-            "buttonText": "view site"
+            "description": "For Zaku, we transformed a social impact idea into reality: we designed the mockup in Figma, developed the landing page, and built the MVP of a mobile app that connects donors with charities, highlighting the real impact of each contribution.",
+            "technologies": ["Figma", "React", "Django"],
+            "imageUrl": "assets/zaku.png",
+            "buttons": [
+                {
+                    "text": "Application",
+                    "link": "https://app.zakuimpacto.com/"
+                },
+                {
+                    "text": "Landing Page",
+                    "link": "https://www.zakuimpacto.com/"
+                },
+                {
+                    "text": "View Design",
+                    "link": "https://www.figma.com/proto/BL5nDcu7AnftLsTeT7StBd/Zaku?node-id=78-536&p=f&t=roGIQHHdiVhamEpS-0&scaling=scale-down&content-scaling=fixed&page-id=11%3A2&starting-point-node-id=78%3A536"
+                }
+            ]
         }
     }
 }
