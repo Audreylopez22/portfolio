@@ -13,7 +13,7 @@
     "aboutSubtitle": "Somos estrategas digitales apasionados por convertir problemas complejos en experiencias digitales simples y potentes.",
     "technologies": "Tecnologías que Dominamos",
     "techSubtitle": "Herramientas de vanguardia para construir soluciones robustas.",
-    "contact": "Inicia un Proyecto"
+    "contact": "Contáctanos"
   },
   "techStack": {
     "cat1": "Frontend & Diseño",
@@ -22,12 +22,12 @@
     "cat4": "Herramientas, Despliegue & Datos"
   },
   "services": {
-    "title1": "Desarrollo Web",
-    "desc1": "Soluciones personalizadas y escalables adaptadas a tus procesos de negocio.",
+    "title1": "Desarrollo de Software",
+    "desc1": "Creamos soluciones digitales desde cero que optimizan procesos, mejoran la eficiencia operativa y acompañan el crecimiento tecnológico de tu empresa. Nuestro enfoque prioriza rendimiento, seguridad y calidad de código para construir productos preparados para el futuro.",
     "title2": "Diseño de interfaces",
-    "desc2": "Interfaces intuitivas diseñadas para maximizar el engagement y la conversión.",
+    "desc2": "Diseñamos experiencias digitales intuitivas centradas en las necesidades reales de tus usuarios.Combinamos estrategia, diseño visual y usabilidad para crear interfaces modernas que mejoran la experiencia del usuario y aumentan la conversión. Cada interacción está pensada para ser clara, fluida y coherente con tu marca.",
     "title3": "Mantenimiento & Soporte",
-    "desc3": "Mantén tu software siempre actualizado y protegido contra amenazas digitales."
+    "desc3": "Garantizamos la continuidad y el óptimo funcionamiento de tus plataformas digitales. Nos encargamos del monitoreo, las actualizaciones y la seguridad para que tu software evolucione constantemente. Mientras tú te enfocas en hacer crecer tu negocio, nosotros mantenemos tu tecnología siempre en su mejor versión."
   },
   "approach": {
     "badgeText": "Creando soluciones desde",
@@ -38,7 +38,9 @@
     "point1Title": "Desarrollo Ágil",
     "point1Desc": "Entregas incrementales y comunicación constante para garantizar el alineamiento total con tus metas.",
     "point2Title": "Código de Confianza",
-    "point2Desc": "Arquitecturas seguras y escalables construidas bajo estándares de calidad."
+    "point2Desc": "Arquitecturas seguras y escalables construidas bajo estándares de calidad.",
+    "point3Title": "Enfoque en Resultados",
+    "point3Desc": "Soluciones alineadas a tus objetivos de negocio que transforman cada línea de código en valor real y crecimiento para tu marca."
   },
   "contact": {
     "title": "Hablemos de tu idea",
@@ -58,7 +60,7 @@
   },
   "cards": {
     "subtitle1": "Desarrollador Senior",
-    "subtitle2": "Desarrolladora Web"
+    "subtitle2": "Desarrolladora Fullstack"
   },
   "projects": {
     "catarsisLab": {

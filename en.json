@@ -13,7 +13,7 @@
     "aboutSubtitle": "We are digital strategists passionate about turning complex problems into simple and powerful digital experiences.",
     "technologies": "Technologies we Master",
     "techSubtitle": "Cutting-edge tools to build robust solutions.",
-    "contact": "Start a Project"
+    "contact": "Contact Us"
   },
   "techStack": {
     "cat1": "Frontend & Design",
@@ -22,13 +22,13 @@
     "cat4": "Tools, Deployment & Data"
   },
   "services": {
-    "title1": "Web Development",
-    "desc1": "Customized and scalable solutions tailored to your business processes.",
-    "title2": "Interface design",
-    "desc2": "Intuitive interfaces designed to maximize user engagement and conversion.",
-    "title3": "Maintenance & Support",
-    "desc3": "Keep your software always up-to-date and protected against digital threats."
-  },
+  "title1": "Software Development",
+  "desc1": "We create digital solutions from the ground up that optimize processes, improve operational efficiency, and support your company’s technological growth. Our approach prioritizes performance, security, and clean code to deliver future-ready products.",
+  "title2": "Interface Design",
+  "desc2": "We design intuitive digital experiences focused on real user needs. By combining strategy, visual design, and usability, we create modern interfaces that enhance user experience and increase conversion rates. Every interaction is crafted to be clear, seamless, and aligned with your brand.",
+  "title3": "Maintenance & Support",
+  "desc3": "We guarantee the continuity and optimal functioning of your digital platforms. We take care of monitoring, updates, and security so that your software is constantly evolving. While you focus on growing your business, we keep your technology running at its best."
+},
   "approach": {
     "badgeText": "Creating solutions since",
     "subtitle": "About Us",
@@ -38,7 +38,9 @@
     "point1Title": "Agile Development",
     "point1Desc": "Incremental deliveries and constant communication to ensure total alignment with your goals.",
     "point2Title": "Trusted Code",
-    "point2Desc": "Secure and scalable architectures built under quality standards."
+    "point2Desc": "Secure and scalable architectures built under quality standards.",
+    "point3Title": "Results-Oriented Focus",
+    "point3Desc": "Solutions aligned with your business objectives that transform every line of code into real value and growth for your brand."
   },
   "contact": {
     "title": "Let's Build Something Great",
@@ -58,7 +60,7 @@
   },
   "cards": {
     "subtitle1": "Senior Developer",
-    "subtitle2": "Web Developer"
+    "subtitle2": "Fullstack Developer"
   },
   "projects": {
     "catarsisLab": {
